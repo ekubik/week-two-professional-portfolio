@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #97b2dc;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
 }
 
 header {
@@ -12,12 +18,32 @@ h1 {
   padding-left: 10px;
 }
 
+h2 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
   background-color: #6989bb;
   font-size: 20px;
-  /*border-top: solid 3px #fff*/
+}
+
+#about-me p {
+  position: relative;
+  bottom: 300px;
+  left: 700px;
+  width: 400px;
+}
+
+#profile-photo {
+  border-radius: 30px;
+  margin-left: 100px;
 }
 
 ul {
@@ -37,15 +63,60 @@ a {
   color: #fff;
 }
 
+#work-samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  text-align: center;
+  margin: 10px auto;
+  border: solid 4px white;
+  width: 500px;
+}
+
+.firstproject {
+  width: 700px;
+}
+
 .project-examples {
-  width: 400px;
+  max-width: 300px;
   height: 300px;
+  padding: 20px 15px;
+}
+
+#projectone {
+  width: 450px;
+  height: 300px;
+  padding: 20px 15px;
 }
 
 .contact-links {
   display: block;
+  text-align: start;
 }
 
 .contact-links::before {
   content: "❖ ";
+}
+
+.other-contact-links {
+  margin: 0 12px;
+}
+
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  color: grey;
+  text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+  .projects {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
