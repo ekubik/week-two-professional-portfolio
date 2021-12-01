@@ -1,0 +1,51 @@
+body {
+  background-color: #97b2dc;
+}
+
+header {
+  background-color: #6989bb;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  padding-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #6989bb;
+  font-size: 20px;
+  /*border-top: solid 3px #fff*/
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-examples {
+  width: 400px;
+  height: 300px;
+}
+
+.contact-links {
+  display: block;
+}
+
+.contact-links::before {
+  content: "❖ ";
+}
