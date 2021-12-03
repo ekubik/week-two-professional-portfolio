@@ -33,6 +33,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 A variety of HTML and CSS properties needed to be used in order to create a portfolio which satisfied all the above criteria. These included: flexbox, media queries, css variables. The result was a portfolio that displayed the developer's work and contact information. The site incorporates elements of responsive design as the layout adapts depending on the size of the screen that it is being viewed on.
 
-The completed website can be viewed here:
-
-<img src="">
+The completed website can be viewed here: https://ekubik.github.io/week-two-professional-portfolio/
