@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #97b2dc;
+  background-color: #78a2e3;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   color: black;
 }
 
 header {
-  background-color: #6989bb;
+  background-color: #4d67a3;
   color: #fff;
   padding: 10px;
 }
@@ -27,30 +27,32 @@ h2 {
 
 h3 {
   text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #6989bb;
+  background-color: #4d67a3;
   font-size: 20px;
 }
 
 #about-me p {
   display: block;
-  max-width: 400px;
+  max-width: 600px;
   font-size: 18px;
-  margin-left: 80px;
+  margin: 50px 80px;
 }
 
 #profile-photo {
   border-radius: 30px;
   margin-left: 100px;
-  width: 200px;
+  width: 400px;
   height: auto;
   padding: 20px;
-  background-color: purple;
-  border: solid 5px darkgrey;
+  background-color: #4d67a3;
+  border: solid 10px #fff;
 }
 
 ul {
@@ -73,50 +75,66 @@ a {
   text-decoration: none;
 }
 
-/*#my-work {
-  display: flex;
-}*/
+p {
+  font-size: 18px;
+}
+
+#my-work {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
+  background-color: #4d67a3;
 }
 
 .projects {
-  text-align: center;
-  margin: 10px auto;
-  border: solid 4px white;
+  border: solid 8px white;
   width: 25%;
   flex-grow: 1;
+  background-color: #4d67a3;
 }
 
 .project-examples {
   max-width: 100%;
   max-height: 100%;
   padding: 20px 15px;
+  height: 300px;
+  width: 400px;
+}
+
+.projects:hover {
+  transform: scale(1.1);
 }
 
 .project1 {
   flex-grow: 2;
-  text-align: center;
-  margin: 10px auto;
-  border: solid 4px white;
+  border: solid 8px white;
   width: 100%;
+}
+
+.project1:hover {
+  transform: scale(1.1);
 }
 
 #projectone {
   max-width: 100%;
   max-height: 100%;
-  height: 300px;
-  float: left;
-  padding: 30px 30px;
+  height: 400px;
+  width: 1000px;
+  margin-bottom: 30px;
 }
 
 .contact-links {
-  display: block;
+  display: inline;
   text-align: start;
+  margin-left: 20px;
+  color: #000;
 }
 
 .contact-links::before {
@@ -124,7 +142,7 @@ a {
 }
 
 .other-contact-links {
-  margin: 0 12px;
+  margin: 0 15px;
 }
 
 h4 {
