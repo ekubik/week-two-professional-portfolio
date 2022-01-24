@@ -20,10 +20,12 @@ header {
 h1 {
   margin-left: 30px;
   display: block;
+
 }
 
 h2 {
-  font-size: 30px;
+  font-family: 'Merienda', cursive;
+  font-size: 40px;
   margin-left: 40px;
 }
 
@@ -31,6 +33,7 @@ h3 {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
+  font-family: 'Merienda', cursive;
 }
 
 /* nav bar items positioned to right - end of flex box*/
