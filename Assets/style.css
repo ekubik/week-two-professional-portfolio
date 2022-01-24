@@ -19,7 +19,9 @@ header {
 
 h1 {
   margin-left: 30px;
+  font-size: 50px;
   display: block;
+  font-family: 'Merienda', cursive;
 
 }
 
@@ -45,20 +47,20 @@ nav {
 }
 
 #about-me p {
-  display: block;
   max-width: 600px;
   font-size: 18px;
-  margin: 50px 80px;
+  margin: 50px 100px;
+  padding: 80px 50px;
 }
 
 #profile-photo {
-  border-radius: 30px;
+  border-radius: 50%;
   margin-left: 100px;
   width: 400px;
   height: auto;
   padding: 20px;
-  background-color: #4d67a3;
-  border: solid 10px #fff;
+  /*background-color: #4d67a3;
+  border: solid 10px #fff;*/
 }
 
 ul {
@@ -146,8 +148,13 @@ p {
   color: #000;
 }
 
+#profile-container{
+  display: flex;
+  padding-bottom: 30px;
+}
+
 .contact-links {
-  display: inline;
+
   text-align: start;
   margin-left: 20px;
   color: #000;
