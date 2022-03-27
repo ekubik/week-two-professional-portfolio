@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-This project involved building a professional portfolio to showcase my work as a web developer, using HTML and CSS. The completed project had to adhere to the following user story, and acceptance criteria.
+This project involved building a professional portfolio to showcase my work as a web developer, using HTML and CSS. It was created to fulfill the conditions set out by the below user story, and acceptance criteria. 
 
 ## User Story
 
@@ -31,6 +31,23 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ```
 
-A variety of HTML and CSS properties needed to be used in order to create a portfolio which satisfied all the above criteria. These included: flexbox, media queries, css variables. The result was a portfolio that displayed the developer's work and contact information. The site incorporates elements of responsive design as the layout adapts depending on the size of the screen that it is being viewed on.
+## Technologies Used: 
 
+This project was built with: 
+
+* HTML
+* CSS
+* Media Queries
+* Bootstrap CSS Framework
+* FontAwesome
+* Google Fonts
+
+## Preview 
+
+
+## Link
 The completed website can be viewed here: https://ekubik.github.io/week-two-professional-portfolio/
+
+
+## Contact
+Contact Ewa at <a href="mailto:ewa.kubik@hotmail.com"> ewa.kubik@hotmail.com </a>
