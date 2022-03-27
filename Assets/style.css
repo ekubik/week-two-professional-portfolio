@@ -5,14 +5,14 @@
 
 /*font stack - in the event that first font is not compatible with browser, different font-type will be displayed */
 body {
-  background-color: /* #78a2e3;*/ #539EB1;
+  background-color: /* #78a2e3;*/ #539eb1;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   color: black;
 }
 
 header {
-  background-color: #539EB1;
+  background-color: #539eb1;
   color: #fff;
   padding: 10px;
 }
@@ -26,13 +26,12 @@ h1 {
   font-size: 50px;
   display: block;
   /*font-family: 'Merienda', cursive;*/
-  font-family: 'Amatic SC', cursive;
-  background-color:#539EB1;
-
+  font-family: "Amatic SC", cursive;
+  background-color: #539eb1;
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 60px;
   text-align: center;
 }
@@ -41,23 +40,21 @@ h3 {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
-  font-family: 'Amatic SC', cursive;
+  padding-top: 10px;
+  font-family: "Amatic SC", cursive;
 }
 
 /* nav bar items positioned to right - end of flex box*/
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #539EB1;
+  background-color: #539eb1;
   font-size: 20px;
 }
 
-
-
 #about-me p {
-  max-width: 600px;
   font-size: 18px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 #profile-photo {
@@ -66,8 +63,6 @@ nav {
   max-width: 400px;
   height: auto;
   padding: 20px;
-  /*background-color: #4d67a3;
-  border: solid 10px #fff;*/
 }
 
 ul {
@@ -83,18 +78,22 @@ li {
 }
 
 nav a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   color: #fff;
 }
 
 a {
   text-decoration: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
+}
+
+a:hover {
+color: #b3e4e6;
 }
 
 p {
   font-size: 18px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 #my-work {
@@ -103,12 +102,11 @@ p {
 }
 
 main {
- display:flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /*flexbox. content wraps to next line when it doesn't fit onscreen*/
 .container {
@@ -117,7 +115,7 @@ main {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background-color: #539EB1;
+  background-color: #539eb1;
 }
 
 /*project cards 2-5 take up 25% of width of viewport*/
@@ -125,7 +123,7 @@ main {
   border: double 8px white;
   width: 25%;
   flex-grow: 1;
-  background-color: #539EB1;
+  background-color: #539eb1;
   color: #000;
 }
 
@@ -150,7 +148,6 @@ main {
   width: 100%;
 }
 
-
 #projectone {
   max-width: 100%;
   max-height: 100%;
@@ -169,26 +166,34 @@ main {
   width: 75%;
 }
 
-#profile-container{
+#profile-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 30px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   border: double 8px white;
   align-items: center;
   max-width: 100%;
-
 }
 
 .contact-links a {
-
   text-align: start;
   margin-left: 20px;
   color: #000;
 }
 
+.contact-links a:hover {
+  color: #b3e4e6;
+}
 
+p a {
+  color: #000;
+}
+
+p a:hover {
+  color: #b3e4e6;
+}
 
 /* when screen width under 992px, first project card remains at 100% width, rest increase to 50% of screen width*/
 @media screen and (max-width: 992px) {
