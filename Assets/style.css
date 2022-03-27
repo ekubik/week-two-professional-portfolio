@@ -5,58 +5,65 @@
 
 /*font stack - in the event that first font is not compatible with browser, different font-type will be displayed */
 body {
-  background-color: #78a2e3;
+  background-color: /* #78a2e3;*/ #539EB1;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   color: black;
 }
 
 header {
-  background-color: #4d67a3;
+  background-color: #539EB1;
   color: #fff;
   padding: 10px;
+}
+
+section {
+  width: 100%;
 }
 
 h1 {
   margin-left: 30px;
   font-size: 50px;
   display: block;
-  font-family: 'Merienda', cursive;
+  /*font-family: 'Merienda', cursive;*/
+  font-family: 'Amatic SC', cursive;
+  background-color:#539EB1;
 
 }
 
 h2 {
-  font-family: 'Merienda', cursive;
-  font-size: 40px;
-  margin-left: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  text-align: center;
 }
 
 h3 {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
-  font-family: 'Merienda', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 
 /* nav bar items positioned to right - end of flex box*/
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #4d67a3;
+  background-color: #539EB1;
   font-size: 20px;
 }
+
+
 
 #about-me p {
   max-width: 600px;
   font-size: 18px;
-  margin: 50px 100px;
-  padding: 80px 50px;
+  font-family: 'Dosis', sans-serif;
 }
 
 #profile-photo {
-  border-radius: 50%;
+  border-radius: 75px;
   margin-left: 100px;
-  width: 400px;
+  max-width: 400px;
   height: auto;
   padding: 20px;
   /*background-color: #4d67a3;
@@ -76,21 +83,32 @@ li {
 }
 
 nav a {
+  font-family: 'Dosis', sans-serif;
   color: #fff;
 }
 
 a {
   text-decoration: none;
+  font-family: 'Dosis', sans-serif;
 }
 
 p {
   font-size: 18px;
+  font-family: 'Dosis', sans-serif;
 }
 
 #my-work {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+main {
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
 
 /*flexbox. content wraps to next line when it doesn't fit onscreen*/
 .container {
@@ -99,15 +117,16 @@ p {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background-color: #4d67a3;
+  background-color: #539EB1;
 }
 
 /*project cards 2-5 take up 25% of width of viewport*/
 .projects {
-  border: solid 8px white;
+  border: double 8px white;
   width: 25%;
   flex-grow: 1;
-  background-color: #4d67a3;
+  background-color: #539EB1;
+  color: #000;
 }
 
 /*max height and width set to keep images within their container*/
@@ -127,14 +146,10 @@ p {
 /*project card takes up 100% of the width of viewport. user story requests first application to be displayed larger*/
 .project1 {
   flex-grow: 2;
-  border: solid 8px white;
+  border: double 8px white;
   width: 100%;
 }
 
-/*project card increases in size when user hovers over it */
-/*.project1:hover {
-  transform: scale(1.1);
-}*/
 
 #projectone {
   max-width: 100%;
@@ -144,39 +159,36 @@ p {
   margin-bottom: 30px;
 }
 
-#contact-me a {
+#contact-me {
   color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
 }
 
 #profile-container{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding-bottom: 30px;
+  font-family: 'Dosis', sans-serif;
+  border: double 8px white;
+  align-items: center;
+  max-width: 100%;
+
 }
 
-.contact-links {
+.contact-links a {
 
   text-align: start;
   margin-left: 20px;
   color: #000;
 }
 
-/*symbol inserted before each item*/
-.contact-links::before {
-  content: "❖ ";
-}
 
-.other-contact-links a {
-  margin: 0 15px;
-  color: #000;
-}
-
-/*font change from the rest of the body*/
-h4 {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: lighter;
-  color: grey;
-  text-align: center;
-}
 
 /* when screen width under 992px, first project card remains at 100% width, rest increase to 50% of screen width*/
 @media screen and (max-width: 992px) {
