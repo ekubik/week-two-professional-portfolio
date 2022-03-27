@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-This project involved building a professional portfolio to showcase my work as a web developer, using HTML and CSS. It was created to fulfill the conditions set out by the below user story, and acceptance criteria. 
+This project involved building a professional portfolio to showcase my work as a web developer using HTML and CSS. It was created to fulfill the conditions set out by the below user story, and acceptance criteria. 
 
 ## User Story
 
@@ -30,6 +30,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 ```
+<br>
 
 ## Technologies Used: 
 
@@ -42,8 +43,16 @@ This project was built with:
 * FontAwesome
 * Google Fonts
 
+<br>
+<br>
+
 ## Preview 
 
+<img src="./Assets/portfoliopreview-full.png" alt="porfolio homepage">
+<br>
+<img src="./Assets/portfoliopreview-responsive.png" alt="porfolio homepage responding to change in screen size">
+<br>
+<br>
 
 ## Link
 The completed website can be viewed here: https://ekubik.github.io/week-two-professional-portfolio/
