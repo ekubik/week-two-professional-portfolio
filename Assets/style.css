@@ -3,10 +3,8 @@
   box-sizing: border-box;
 }
 
-/*font stack - in the event that first font is not compatible with browser, different font-type will be displayed */
 body {
-  background-color: /* #78a2e3;*/ #539eb1;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #539eb1;
   font-size: 16px;
   color: black;
 }
@@ -19,15 +17,19 @@ header {
 
 section {
   width: 100%;
+  max-width: 1320px;
 }
 
 h1 {
-  margin-left: 30px;
   font-size: 50px;
-  display: block;
-  /*font-family: 'Merienda', cursive;*/
   font-family: "Amatic SC", cursive;
   background-color: #539eb1;
+}
+
+#about-me h1 {
+  text-align: center;
+  margin-right: 30px;
+  padding: 30px;
 }
 
 h2 {
@@ -52,17 +54,37 @@ nav {
   font-size: 20px;
 }
 
-#about-me p {
+#about-me {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+
+
+#userinfo {
   font-size: 18px;
   font-family: "Dosis", sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20px;
+
 }
 
 #profile-photo {
   border-radius: 75px;
-  margin-left: 100px;
   max-width: 400px;
   height: auto;
   padding: 20px;
+}
+
+#userinfo li { 
+  line-height: 90%;
+
 }
 
 ul {
@@ -168,13 +190,14 @@ main {
 
 #profile-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   padding-bottom: 30px;
   font-family: "Dosis", sans-serif;
   border: double 8px white;
-  align-items: center;
-  max-width: 100%;
+  align-items: space-between;
+  max-width: 1050px;
+  justify-content: center;
 }
 
 .contact-links a {
@@ -203,6 +226,9 @@ p a:hover {
   .project1 {
     width: 100%;
   }
+  #about-me {
+    flex-direction: column;
+  }
 }
 
 /*when screen width under 610px, first project card remains at 100%, while the rest are 90% of screen width.
@@ -216,8 +242,7 @@ it continues to satisfy user story*/
     width: 100%;
   }
   nav,
-  body,
-  footer {
+  body {
     flex-direction: column;
   }
 }
